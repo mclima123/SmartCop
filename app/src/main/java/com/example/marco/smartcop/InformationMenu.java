@@ -16,7 +16,7 @@ public class InformationMenu extends SwipeDismissBaseActivity
     }
 
     public void clickID(View view){
-        android.support.v7.app.AlertDialog diaBox = AskOption(); //mostra a opção de Eliminar
+        android.support.v7.app.AlertDialog diaBox = AskOption();
         diaBox.show();
     }
 

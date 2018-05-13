@@ -2,7 +2,6 @@ package com.example.marco.smartcop;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,7 +16,7 @@ public class IdentifyCitizen extends SwipeDismissBaseActivity
     }
 
     public void clickID(View view){
-        android.support.v7.app.AlertDialog diaBox = AskOption(); //mostra a opção de Eliminar
+        android.support.v7.app.AlertDialog diaBox = AskOption();
         diaBox.show();
     }
 

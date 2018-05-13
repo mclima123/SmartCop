@@ -16,7 +16,7 @@ public class IdentifyVehicle extends SwipeDismissBaseActivity
     }
 
     public void clickID(View view){
-        android.support.v7.app.AlertDialog diaBox = AskOption(); //mostra a opção de Eliminar
+        android.support.v7.app.AlertDialog diaBox = AskOption();
         diaBox.show();
     }
 
@@ -49,5 +49,10 @@ public class IdentifyVehicle extends SwipeDismissBaseActivity
                 })
                 .create();
         return myQuittingDialogBox;
+    }
+
+    public void clickMugshot(View view) {
+        Intent intent = new Intent(this, IdentifyCitizen.class);
+        startActivity(intent);
     }
 }
