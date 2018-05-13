@@ -3,7 +3,6 @@ package com.example.marco.smartcop;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.tts.Voice;
 import android.view.View;
 
 public class SettingsMenu extends SwipeDismissBaseActivity
