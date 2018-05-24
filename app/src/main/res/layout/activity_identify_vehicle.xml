@@ -202,6 +202,7 @@
         android:layout_marginTop="20dp"
         android:text="CZ-93-MP"
         android:textSize="24sp"
+        android:background="@drawable/image_border"
         app:layout_constraintEnd_toStartOf="@+id/view3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id" />
