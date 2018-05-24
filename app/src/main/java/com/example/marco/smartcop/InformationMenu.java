@@ -50,4 +50,14 @@ public class InformationMenu extends SwipeDismissBaseActivity
                 .create();
         return myQuittingDialogBox;
     }
+
+    public void clickLaws(View view){
+        Intent intent = new Intent(this, InformationLaws.class);
+        startActivity(intent);
+    }
+
+    public void clickProcedures(View view){
+        Intent intent = new Intent(this, InformationProcedures.class);
+        startActivity(intent);
+    }
 }
