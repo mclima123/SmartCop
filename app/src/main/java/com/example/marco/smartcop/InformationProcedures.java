@@ -50,4 +50,27 @@ public class InformationProcedures extends SwipeDismissBaseActivity
                 .create();
         return myQuittingDialogBox;
     }
+
+    public void clickAmbulance(View view){
+        Intent intent = new Intent(this, Call.class);
+        intent.putExtra("button_clicked", "ambulance");
+        startActivity(intent);
+    }
+
+    public void clickProcedure(View view) {
+        android.support.v7.app.AlertDialog diaBox = ProcedurePopUp();
+        diaBox.show();
+    }
+
+    private android.support.v7.app.AlertDialog ProcedurePopUp()
+    {
+        android.support.v7.app.AlertDialog myQuittingDialogBox = new android.support.v7.app.AlertDialog.Builder(this)
+                //set message, title, and icon
+                .setTitle("Steps")
+
+                .setMessage("1 - Example step\n2 - Example step\n3 - Example step\n4 - Example step")
+
+                .create();
+        return myQuittingDialogBox;
+    }
 }
